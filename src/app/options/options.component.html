@@ -1,0 +1,13 @@
+<p>Please choose one of the following options:</p><br>
+<b>A. Hemoglobin Level</b><br><hr style="color: rgb(255, 255, 255);">
+<button style="margin-top: 10px;" [routerLink]="['/hbana']">>=11 g/dL</button><br><br>
+    <button [routerLink]="['/ironstudy']"><11 g/dL</button><br><br>
+    <br>
+<b>B. Mentzer Index</b><br><hr style="color: rgb(255, 255, 255);">
+<p style="margin-top: 10px;">Please enter MCV and RBC values:</p><br>
+MCV: <input [(ngModel)]="mcv"> fl<br>
+RBC count: <input [(ngModel)]="rbc"> x10^12/L<br><br>
+    <button (click)="calc()">Calculate</button><br><br>
+
+<hr style="color: rgb(255, 255, 255);"><br>
+<button [routerLink]="['/']">Return</button><br><br>
